@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .container {
+    @apply p-2 mx-4;
+  }
+  
+  .main {
+    @apply min-h-screen py-16 flex flex-col justify-center items-center;
+  }
+  
+  .footer {
+    @apply flex py-8 border-t border-gray-300 justify-center items-center;
+  }
+  
+  .footer a {
+    @apply flex justify-center items-center flex-grow;
+  }
+  
+  .title a {
+    @apply text-blue-500 no-underline hover:underline focus:underline active:underline;
+  }
+  
+  .title {
+    @apply m-0 leading-6 text-4xl;
+  }
+  
+  .description {
+    @apply text-center my-16 leading-6 text-lg;
+  }
+  
+  .code {
+    @apply bg-gray-100 rounded p-3 text-base font-mono;
+  }
+  
+  .grid {
+    @apply flex items-center justify-center flex-wrap max-w-screen-md;
+  }
+  
+  .card {
+    @apply m-4 p-6 text-left text-gray-700 no-underline border border-gray-300 rounded transition duration-150;
+  }
+  
+  .card:hover,
+  .card:focus,
+  .card:active {
+    @apply text-blue-500 border-blue-500;
+  }
+  
+  .card h2 {
+    @apply m-0 text-2xl;
+  }
+  
+  .card p {
+    @apply m-0 text-lg leading-6;
+  }
+  
+  .logo {
+    @apply h-4 ml-2;
+  }
+  
+  @media (max-width: 600px) {
+    .grid {
+      @apply w-full flex-col;
+    }
+  }
+  
+}
