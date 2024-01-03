@@ -168,7 +168,7 @@ export default function EditPost() {
         my={4}
       >
         <Heading lineHeight={1.1} fontSize={{ base: "2xl", md: "3xl" }}>
-          Create Post
+          Edit Todo
         </Heading>
 
         <Stack spacing={4}>
@@ -179,7 +179,7 @@ export default function EditPost() {
               defaultValue={post?.content}
               isInvalid={errors.content ? true : false}
               errorBorderColor="crimson"
-              placeholder="Here is a sample placeholder"
+               
             />
           </FormControl>
           <HStack justify={"space-between"} spacing={6}>

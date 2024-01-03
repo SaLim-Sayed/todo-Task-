@@ -148,7 +148,7 @@ export default function CreatePost() {
         my={4}
       >
         <Heading lineHeight={1.1} fontSize={{ base: "2xl", md: "3xl" }}>
-          Create Post
+          Create New Todo 
         </Heading>
 
         <Stack spacing={4}>
@@ -158,7 +158,7 @@ export default function CreatePost() {
               {...register("content")}
               isInvalid={errors.content ? true : false}
               errorBorderColor="crimson"
-              placeholder="Here is a sample placeholder"
+              placeholder="Enter content"
             />
           </FormControl>
           <HStack justify={"space-between"} spacing={6}>
